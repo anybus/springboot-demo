@@ -29,11 +29,6 @@
             <artifactId>common-util</artifactId>
             <version>1.0.1</version>
         </dependency>
-        <dependency>
-            <groupId>com.eva</groupId>
-            <artifactId>db-util</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
 
     </dependencies>
 
