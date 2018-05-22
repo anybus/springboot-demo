@@ -1,7 +1,7 @@
 package com.eva.service.impl;
 
-import com.eva.config.DS;
 import com.eva.dao.CityMapper;
+import com.eva.datasource.DS;
 import com.eva.domain.City;
 import com.eva.service.CityService;
 import org.springframework.beans.factory.annotation.Autowired;

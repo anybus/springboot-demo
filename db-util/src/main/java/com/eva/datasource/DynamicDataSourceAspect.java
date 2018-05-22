@@ -1,4 +1,4 @@
-package com.eva.config;
+package com.eva.datasource;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.After;
@@ -17,7 +17,7 @@ import java.lang.reflect.Method;
 @Component
 public class DynamicDataSourceAspect {
 
-    @Before("@annotation(DS)")
+    @Before("@annotation(com.eva.datasource.DS)")
     public void beforeSwitchDS(JoinPoint point){
         //获得当前访问的class
         Class<?> className = point.getTarget().getClass();
@@ -42,7 +42,7 @@ public class DynamicDataSourceAspect {
         DataSourceContextHolder.setDB(dataSource);
     }
 
-    @After("@annotation(DS)")
+    @After("@annotation(com.eva.datasource.DS)")
     public void afterSwitchDS(JoinPoint point){
         DataSourceContextHolder.clearDB();
     }

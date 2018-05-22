@@ -1,13 +1,15 @@
-package com.eva.dbutil.props;
+package com.eva.druid;
 
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.PropertySource;
-@Data
+
 @ConfigurationProperties(prefix = "druid")
+@Data
 @PropertySource({"classpath:application-db.yml"})
 public class DruidDataSourceProperties {
+    private String type;
     private int initialSize;
     private int minIdle;
     private int maxActive;

@@ -1,4 +1,4 @@
-package com.eva.config;
+package com.eva.datasource;
 
 import org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource;
 
