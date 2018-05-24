@@ -1,12 +1,11 @@
 package com.eva.dao;
 
-import com.eva.domain.City;
-import org.apache.ibatis.annotations.*;
 
-@Mapper
-public interface CityMapper {
-    @Select("select * from city where state = #{state}")
-    City findByState(@Param("state") String state);
+import com.eva.core.MyMapper;
+import com.eva.model.City;
 
-    City selectCityById(Long id);
+public interface CityMapper extends MyMapper<City> {
+    public City selectCityById(Long id);
+
+    City findByState(String state);
 }

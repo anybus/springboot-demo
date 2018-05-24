@@ -1,12 +1,28 @@
 package com.eva.service;
 
+import com.eva.core.AbstractService;
+import com.eva.dao.CityMapper;
+import com.eva.datasource.DS;
+import com.eva.model.City;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
-import com.eva.domain.City;
+@Service
+public class CityService extends AbstractService<City> {
 
-public interface CityService {
+    @Autowired
+    private CityMapper cityMapper;
 
-    City findByState(String state);
+    public City findByState(String state) {
+        return cityMapper.findByState(state);
+    }
 
-    City selectCityById(Long id);
-    City selectCityByIdDB2(Long id);
+    public City selectCityById(Long id) {
+        return cityMapper.selectCityById(id);
+    }
+
+    @DS("datasource2")
+    public City selectCityByIdDB2(Long id) {
+        return mapper.selectByPrimaryKey(id);
+    }
 }

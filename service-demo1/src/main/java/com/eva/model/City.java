@@ -13,17 +13,18 @@
  *    See the License for the specific language governing permissions and
  *    limitations under the License.
  */
-package com.eva.domain;
+package com.eva.model;
 
 import lombok.Data;
 
+import javax.persistence.Id;
 import java.io.Serializable;
 
 @Data
 public class City implements Serializable {
 
 	private static final long serialVersionUID = 1L;
-
+	@Id
 	private Long id;
 
 	private String name;

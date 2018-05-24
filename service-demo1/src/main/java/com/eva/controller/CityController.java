@@ -1,7 +1,7 @@
 package com.eva.controller;
 
 
-import com.eva.domain.City;
+import com.eva.model.City;
 import com.eva.service.CityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;

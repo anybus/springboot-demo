@@ -1,6 +1,6 @@
 spring:
   profiles:
-    include: db
+    include: db,dao
   datasource:
     db1:
         url: jdbc:mysql://127.0.0.1:3306/test01?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false
@@ -15,7 +15,3 @@ spring:
         password: root
         driver-class-name: com.mysql.jdbc.Driver
 
-
-mybatis:
-  type-aliases-package: com.eva.domain
-  mapper-locations: classpath*:mapper/*.xml

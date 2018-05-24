@@ -23,4 +23,7 @@
     <select id="selectCityById" resultType="City">
         select * from city where id = #{id}
     </select>
+    <select id="findByState" resultType="City">
+        select * from city where state = #{state}
+    </select>
 </mapper>
