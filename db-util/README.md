@@ -20,5 +20,6 @@
     - application-db.yml
         - 将数据库链接配置剔除出去，仅保留druid的配置
     - DruidDataSourceProperties
-        - 
+        - 注解读取yml中的druid配置
     - DruidDataSourceBuilder
+        - 创建druid数据源的工厂类
