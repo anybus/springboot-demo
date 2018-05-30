@@ -11,6 +11,10 @@ AbstractService 这个也是网友封装好的，拿来主义。
 CityMapper.xml 原生mybatis的示例
 
 后续会增加关联表、批量更新等操作
+BaseEntity的封装感觉有些冗余，后续再做调整！
+
+
+
 
 
 

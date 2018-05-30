@@ -56,11 +56,11 @@ public class CityService extends AbstractService<City> {
     }
 
 
-    public void save(City country) {
-        if (country.getId() != null) {
-            cityMapper.updateByPrimaryKey(country);
+    public void save(City city) {
+        if (city.getId() != null) {
+            cityMapper.updateByPrimaryKey(city);
         } else {
-            cityMapper.insert(country);
+            cityMapper.insert(city);
         }
     }
 

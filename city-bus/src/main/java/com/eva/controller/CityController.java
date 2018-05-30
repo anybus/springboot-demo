@@ -29,10 +29,7 @@ import com.eva.service.CityService;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
@@ -74,8 +71,8 @@ public class CityController {
         return result;
     }
 
-    @RequestMapping(value = "/save", method = RequestMethod.POST)
-    public ModelMap save(City city) {
+    @PostMapping(value = "/save")
+    public ModelMap save(@RequestBody City city) {
         ModelMap result = new ModelMap();
         String msg = city.getId() == null ? "新增成功!" : "更新成功!";
         cityService.save(city);
