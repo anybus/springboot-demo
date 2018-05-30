@@ -15,6 +15,7 @@
         <module>common-util</module>
         <module>app1</module>
         <module>db-util</module>
+        <module>city-bus</module>
     </modules>
 
     <parent>
