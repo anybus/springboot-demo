@@ -20,9 +20,13 @@
 找到子模块B的错误，原因是在A下打包，maven会认为B是库里的jar包，它无法利用模块间的依赖关系！
 
 ### common-util 模块
-
+[跳转至](https://github.com/anybus/springboot-demo/tree/master/common-util)
 ### db-util 模块
-
+[跳转至](https://github.com/anybus/springboot-demo/tree/master/db-util)
+### city-bus 模块
+[跳转至](https://github.com/anybus/springboot-demo/tree/master/city-bus)
+### app1 模块
+[跳转至](https://github.com/anybus/springboot-demo/tree/master/app1)
 
 
 

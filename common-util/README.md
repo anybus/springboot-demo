@@ -16,14 +16,14 @@ pom配置:
 
 本模块测试了属性文件的跨模块读取
 在common_util模块存放了commonutil.properties
-在web模块service-demo1的DemoRestController中加载并读取属性值
+在web入口模块app1的DemoRestController中加载并读取属性值
 注解配置如下：
 @PropertySource(value = "classpath:commonutil.properties")   类注解
 @Value("${testName}")
 private String testName;           属性注解
 
 从jar包的情况看：
-service-demo1-0.0.1-SNAPSHOT.jar
+app1-0.0.1-SNAPSHOT.jar
 - BOOT-INF
   - classes   ***service-demo1 web模块的代码所在***
     - com.eva
