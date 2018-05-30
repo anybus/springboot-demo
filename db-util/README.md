@@ -70,7 +70,8 @@
     我们的各个业务类的mapper接口只需要继承MyMapper即可，就能方便实现单表的各种操作，批量更新和删除除外！（作者没实现）
     批量插入还是可以的，效率很高
     
-注：勿忘程序入口的两个注解，
+注：勿忘程序入口的注解，
+    exclude = {DataSourceAutoConfiguration.class}   把默认的数据源自动配置给关闭掉！
     @MapperScan(basePackages = "com.eva.dao")
     @EnableTransactionManagement
     一个是通用mapper需要的，一个是开启事务需要的！
