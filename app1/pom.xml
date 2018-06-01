@@ -39,6 +39,11 @@
             <artifactId>city-bus</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>com.eva</groupId>
+            <artifactId>redis-util</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
 
     </dependencies>
 
